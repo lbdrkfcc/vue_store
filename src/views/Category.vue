@@ -1,11 +1,11 @@
 <template>
   <div class="container">
-      <div class="row">
+    <div class="row">
         <div class="col text-center">
-          <h1>All products</h1>
+            <h1>{{$route.params.category}}</h1>
         </div>
-      </div>
-      <Products/>
+    </div>
+    <Products/>
   </div>
 </template>
 
@@ -13,9 +13,10 @@
 import Products from '@/components/Products.vue'
 
 export default {
-  name: 'Home',
+  name: 'Category',
   components: { 
     Products,
   },
 }
 </script>
+
